@@ -1,0 +1,132 @@
+:root {
+    --light:#ffffff;
+    --dark: #cac5f4;
+    --barColor: #f3f4f7;
+    --secondary: #0097a7;
+    --lightGray: #dfe9f3;
+    --gradient:  linear-gradient(to right, rgba(0,86,112,1) 0%, rgba(75,122,209,1) 100%);
+    --fontFamily: 'Roboto', Arial sans-serif;
+
+}
+/* Globales */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* hack for box model */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 1.4rem; /* 1rem = 10 px */
+    font-family: var(--fontFamily);
+}
+h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 140rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 778px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        column-gap: 2rem;
+    }
+}
+
+/* Header */
+
+.bg-navbar {
+    background-color: var(--barColor);
+    padding: 1rem 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarOne, .navbarTwo, .navbarThree {
+    display: flex;
+    align-items: center;
+}
+.navbarOne, .navbarThree {
+    flex-basis: 20%;
+}
+.navbarOne {
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.navbarThree {
+    justify-content: flex-end;
+    gap: 4rem;
+}
+
+.navbarTwo {
+    flex-basis: 60%;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.navbar__icon--youtube {
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.navbar__icon--texto {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem
+}
+
+.navbar__search {
+    display: flex;
+    flex-basis: 85%;
+    border: 1px solid var(--dark);
+}
+.navbar__search--icon {
+    
+    padding: 0.5rem 1.5rem;
+    border-left: 1px solid var(--dark);
+}
+
+.navbar__search--input {
+    display: block;
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    
+}
